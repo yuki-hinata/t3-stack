@@ -17,7 +17,7 @@ import { type AdapterAccount } from "next-auth/adapters";
  *
  * @see https://orm.drizzle.team/docs/goodies#multi-project-schema
  */
-export const createTable = mysqlTableCreator((name) => `today-where-go-node-server_${name}`);
+export const createTable = mysqlTableCreator((name) => `${name}`);
 
 export const posts = createTable(
   "post",
@@ -55,7 +55,7 @@ export const usersRelations = relations(users, ({ many }) => ({
 }));
 
 export const accounts = createTable(
-  "account",
+  "accounts",
   {
     userId: varchar("userId", { length: 255 })
       .notNull()
@@ -77,7 +77,7 @@ export const accounts = createTable(
     compoundKey: primaryKey({
       columns: [account.provider, account.providerAccountId],
     }),
-    userIdIdx: index("account_userId_idx").on(account.userId),
+    userIdIdx: index("idx_user_id").on(account.userId)
   })
 );
 
