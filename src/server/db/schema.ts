@@ -55,7 +55,7 @@ export const usersRelations = relations(users, ({ many }) => ({
 }));
 
 export const accounts = createTable(
-  "accounts",
+  "account",
   {
     userId: varchar("userId", { length: 255 })
       .notNull()
