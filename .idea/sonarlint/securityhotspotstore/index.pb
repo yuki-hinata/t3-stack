@@ -19,3 +19,14 @@ G
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+>
+next.config.js,8/1/811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
+=
+.dockerignore,0/5/05a721ebe3ba0754116825ed1359ff1785f4bbac
+:
+
+Dockerfile,6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+4
+.env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
+B
+docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
